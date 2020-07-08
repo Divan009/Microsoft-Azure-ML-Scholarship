@@ -127,7 +127,7 @@ We choose a cost function (like RMSE) to calculate the error and then _minimize 
 - **Rescale data**: Linear regression is very sensitive to the distance among data points, so it's always a good idea to _normalize or standardize the data_.
 - **Remove noise**: Linear regression is very sensitive to noise and outliers in the data. Outliers will significantly change the line learned. Thus, cleaning the data is a critical step prior to applying linear regression.
 
-
+The training process is a process of minimizing the error
 
 
 
