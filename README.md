@@ -129,6 +129,31 @@ We choose a cost function (like RMSE) to calculate the error and then _minimize 
 
 The training process is a process of minimizing the error
 
+## Parametric vs. Non-parametric
+
+**Parametric machine** learning algorithms _make assumptions about the mapping function_ and _have a fixed number of parameters_. No matter how much data is used to learn the model, this will not change how many parameters the algorithm has.
+**Benefits:**
+Simpler and easier to understand; easier to interpret the results
+Faster when talking about learning from data
+Less training data required to learn the mapping function, working well even if the fit to data is not perfect
+
+**Limitations:**
+Highly constrained to the specified form of the simplified function
+Limited complexity of the problems they are suitable for
+Poor fit in practice, unlikely to match the underlying mapping function.
+
+**Non-parametric** algorithms do not make assumptions regarding the form of the mapping function between input data and output. Consequently, they are free to learn any functional form from the training data.
+
+**Benefits:**
+High flexibility, in the sense that they are capable of fitting a large number of functional forms
+Power by making weak or no assumptions on the underlying function
+High performance in the prediction models that are produced
+
+**Limitations:**
+More training data is required to estimate the mapping function
+Slower to train, generally having far more parameters to train
+Overfitting the training data is a risk; overfitting makes it harder to explain the resulting predictions
+
 
 
 
