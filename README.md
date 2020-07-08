@@ -108,12 +108,27 @@ This is the learning part of machine learning; That is, we can learn these value
 
 ## Linear Regression
 
-#### Prepare Data
+**y = mx + b**
+
+In algebraic terms, we may refer to **m** as the coefficient of x or simply the _slope of the line_, and we may call **b** the _y-intercept_. In machine learning, you will typically see the _y-intercept_ referred to as the **bias**. 
+
+##### The Cost Function
+Notice from our example of test scores earlier that the line we came up with did not perfectly fit the data. In fact, most of the data points were not on the line!
+When we predict that a student who studies for 10 hours will get a score of 153, we do not expect their score to be exactly 153. Put another way, when we make a prediction using the line, we expect the prediction to have some error.
+
+The **process of finding the best model is essentially a process of finding the coefficients and bias that minimize this error**. To calculate this error, we use a cost function. There are many cost functions you can choose from to train a model and the resulting error will be different depending one which cost function you choose. The most commonly used cost function for linear regression is the root mean squared error (RMSE)
+
+We choose a cost function (like RMSE) to calculate the error and then _minimize that error_ in order to arrive at a line of best fit that models the training data and can be used to make predictions.
+
+#### How to Prepare Data
 - **Linear assumption**: linear regression describes variables using a line. So the relationship between the input variables and the output variable needs to be a linear relationship. If the raw data does not follow a linear relationship, you may be able to transform your data prior to using it with the linear regression algorithm. For example, if your data has an exponential relationship, you can use _log transformation_.
 - **Remove collinearity**: When two variables are collinear, this means they can be modeled by the same line or are at least highly correlated; in other words, one input variable can be accurately predicted by the other. For example, suppose we want to predict education level using the input variables number of years studying at school, if an individual is male, and if an individual is female. In this case, we will see collinearity—the input variable if an individual is female can be perfectly predicted by if an individual is male, thus, we can say they are highly correlated. Having highly correlated input variables will make the model less consistent, so it's important to perform a correlation check among input variables and remove highly correlated input variables.
 - **Gaussian (normal) distribution**: Linear regression assumes that the distance between output variables and real data (called residual) is normally distributed. If this is not the case in the raw data, you will need to first _transform the data_ so that the residual has a normal distribution.
 - **Rescale data**: Linear regression is very sensitive to the distance among data points, so it's always a good idea to _normalize or standardize the data_.
 - **Remove noise**: Linear regression is very sensitive to noise and outliers in the data. Outliers will significantly change the line learned. Thus, cleaning the data is a critical step prior to applying linear regression.
+
+
+
 
 
 
