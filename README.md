@@ -73,8 +73,8 @@ After we have normalized the text, we can identify the particular features of th
 - The approach of **TF-IDF** is to give less importance to words that contain less information and are common in documents, such as "the" and "this"—and to give higher importance to words that contain relevant information and appear less frequently. 
 
 Read more
-Term Frequency-Inverse Document Frequency (TF-IDF) vectorization
-Word embedding, as done with Word2vec or Global Vectors (GloVe)
+[Term Frequency-Inverse Document Frequency (TF-IDF) vectorization](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
+Word embedding, as done with [Word2vec](https://en.wikipedia.org/wiki/Word2vec) or [Global Vectors (GloVe)](https://nlp.stanford.edu/pubs/glove.pdf)
 
 
 
