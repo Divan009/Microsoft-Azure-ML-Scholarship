@@ -23,3 +23,37 @@ This approach is that it implicitly assumes an order across the categories. In t
 
 #### One-Hot Encoding
 we transform each categorical value into a column. If there are n categorical values, n new columns are added. 
+
+##  Image Data
+If you zoom in on an image far enough, you can see that it consists of small tiles, called pixels.
+
+- In **grayscale images**, each pixel can be represented by a single number, which typically ranges from 0 to 255. This value determines how dark the pixel appears (e.g., 0 is black, while 255 is bright white).
+
+- In **colored images**, each pixel can be represented by a vector of three numbers (each ranging from 0 to 255) for the three primary color channels: red, green, and blue(RGB).
+
+The _number of channels_ required to represent the color is known as the **color depth** or simply depth. With an RGB image, depth = 3, because there are three channels (Red, Green, and Blue). In contrast, a grayscale image has depth = 1, because there is only one channel.
+
+#### Encoding an Image
+We need to know the following three things about an image to reproduce it:
+
+- Horizontal position of each pixel
+- Vertical position of each pixel
+- Color of each pixel
+
+The size of the vector required for any given image would be the **height * width * depth** of that image.
+
+#### Assumptions
+We would want to ensure that the input images have a _uniform aspect ratio_ (e.g., by making sure all of the input images are square in shape) and are _normalized_ (e.g. subtract mean pixel value in a channel from each pixel value in that channel)
+
+
+
+
+
+
+
+
+
+
+
+
+
