@@ -154,6 +154,65 @@ More training data is required to estimate the mapping function
 Slower to train, generally having far more parameters to train
 Overfitting the training data is a risk; overfitting makes it harder to explain the resulting predictions
 
+## Supervised learning vs Unsupervised learning vs Reinforcement learning
+
+#### Supervised learning
+Learns from data that contains both the inputs and expected outputs (e.g., labeled data). Common types are:
+
+- Classification: Outputs are categorical.
+- Regression: Outputs are continuous and numerical.
+- Similarity learning: Learns from examples using a similarity function that measures how similar two objects are.
+- Feature learning: Learns to automatically discover the representations or features from raw data.
+- Anomaly detection: A special form of classification, which learns from data labeled as normal/abnormal.
+
+#### Unsupervised learning
+Learns from input data only; finds hidden structure in input data.
+
+- Clustering: Assigns entities to clusters or groups.
+- Feature learning: Features are learned from unlabeled data.
+- Anomaly detection: Learns from unlabeled data, using the assumption that the majority of entities are normal.
+
+#### Reinforcement learning
+Learns how an agent should take action in an environment in order to maximize a reward function.
+
+- Markov decision process: A mathematical process to model decision-making in situations where outcomes are partly random and partly under the control of a decision-maker. Does not assume knowledge of an exact mathematical model.
+
+_Reinforcement learning is an **active process** where the actions of the agent influence the data observed in the future_
+
+## The Trade-Offs
+
+#### Bias vs. Variance
+**Bias** measures _how inaccurate the model prediction is in comparison with the true output_. Error that results from inaccurate assumptions in model training (that are made to simplify the training process). It is due to erroneous assumptions made in the machine learning process to simplify the model and make the target function easier to learn. **High model complexity** tends to have a **low bias**.
+
+**Variance** measures _how much the target function will change if different training data is used_. Error that occurs when the model is too sensitive to the training data (thus giving different estimates when given new training data). Variance can be caused by modeling the random noise in the training data. **High model complexity** tends to have a **high variance**.
+
+As a general trend, **parametric and linear algorithms** often have _**high bias** and **low variance**_, whereas **non-parametric and non-linear algorithms** often have **_low bias and high variance_**
+
+#### Overfitting vs. Underfitting
+Overfitting refers to the situation in which models fit the training data very well, but **fail to generalize to new data**.
+
+Underfitting refers to the situation in which models **neither fit the training data nor generalize to new data**.
+
+#### Prediction Error
+The **prediction error** can be viewed as the **sum** of **model error** (error coming from the model) and the **irreducible error** (coming from data collection).
+
+[prediction error = Bias error + variance + error + irreducible error]
+
+**Low bias means fewer assumptions about the target function**. Some examples of algorithms with low bias are KNN and decision trees. Having fewer assumptions can help generalize relevant relations between features and target outputs. In contrast, **high bias means more assumptions about the target function**. Linear regression would be a good example (e.g., it assumes a linear relationship). Having more assumptions can potentially miss important relations between features and outputs and cause underfitting.
+
+**Low variance indicates changes in training data would result in similar target functions**. For example, linear regression usually has a low variance. **High variance indicates changes in training data would result in very different target functions.** For example, support vector machines usually have a high variance. High variance suggests that the algorithm learns the random noise instead of the output and causes overfitting.
+
+Generally, **increasing model complexity** would **decrease bias error** since the model has more capacity to learn from the training data. But the **variance error would increase** if the model complexity increases, as the model may begin to learn from noise in the training data.
+
+The goal of training machine learning models is to achieve low bias and low variance. The optimal model complexity is where bias error crosses with variance error.
+
+#### How to get over Overfitting and  Underfitting
+- **k-fold cross-validation**: it split the initial training data into k subsets and train the model k times. In each training, it uses one subset as the testing data and the rest as training data.
+- **hold back a validation dataset** from the initial training data to estimatete how well the model generalizes on new data.
+- **simplify the model**. For example, using fewer layers or less neurons to make the neural network smaller.
+- use **more** data.
+- **reduce dimensionality in training data such as PCA**: it projects training data into a smaller dimension to decrease the model complexity.
+Stop the training early when the performance on the testing dataset has not improved after a number of training iterations.
 
 
 
