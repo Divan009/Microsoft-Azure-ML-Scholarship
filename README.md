@@ -66,6 +66,16 @@ Text **normalization** is the _process of transforming a piece of text into a ca
 
 Here we have **tokenized** the text (i.e., split each string of text into a list of smaller parts or tokens), _removed_ stop words (the), and _standardized spelling_ (changing lazzy to lazy).
 
+#### Vectorization
+
+After we have normalized the text, we can identify the particular features of the text that will be relevant to us for the particular task we want to perform—and then get those features extracted in a numerical form
+
+- The approach of **TF-IDF** is to give less importance to words that contain less information and are common in documents, such as "the" and "this"—and to give higher importance to words that contain relevant information and appear less frequently. 
+
+Read more
+Term Frequency-Inverse Document Frequency (TF-IDF) vectorization
+Word embedding, as done with Word2vec or Global Vectors (GloVe)
+
 
 
 
