@@ -83,6 +83,31 @@ Word embedding, as done with [Word2vec](https://en.wikipedia.org/wiki/Word2vec) 
 
 ![preprocessing](https://video.udacity-data.com/topher/2020/February/5e361fb2_text/text.png)
 
+## Computer science vs. Statistical perspective
+A computer scientist might say something like:
+_We are using input features to create a program that can generate the desired output._
+For the **rows** in the table, we might call each row an entity or an observation about an entity. In our example above, each entity is simply a product, and when we speak of an observation, we are simply referring to the data collected about a given product. You'll also sometimes see a row of data referred to as an instance, in the sense that a row may be considered a single example (or instance) of data.
+
+For the **columns** in the table, we might refer to each column as a feature or attribute which describes the property of an entity. In the above example, color and quantity are features (or attributes) of the products.
+
+In contrast, someone with a background in statistics might be inclined to say something more like:
+_We are trying to find a mathematical function that, given the values of the independent variables can predict the values of the dependent variables_.
+
+## Models vs. Algorithms
+
+**Models** are the _**specific representations** learned from data_
+
+**Algorithms** are the _processes of learning_
+
+We can think of the algorithm as a function—we give the algorithm data and it produces a model:
+
+_Model=Algorithm(Data)_
+
+We can think of an algorithm as a _mathematical tool_ that can usually be represented by an _equation_ as well as implemented in code. For example, y = Wx + b is an algorithm that can be used to calculate y from x if the values for W and b are known. But how do we get W and b?
+This is the learning part of machine learning; That is, we can learn these values from training data.
+
+
+
 
 
 
