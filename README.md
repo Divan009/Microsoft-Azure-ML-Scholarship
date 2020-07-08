@@ -1,5 +1,7 @@
 # Microsoft-Azure-ML-Scholarship
 
+_Basically convert everything into numbers_
+
 ## Scaling Data
 Let's consider an example. Imagine you have an image represented as a set of RGB values ranging from 0 to 255. We can scale the range of the values from 0–255 down to a range of 0–1. This scaling process will not affect the algorithm output since every value is scaled in the same way. But it can speed up the training process, because now the algorithm only needs to handle numbers less than or equal to 1.
 There are 2 approaches to it: **standardization** and **normalization**.
@@ -44,6 +46,25 @@ The size of the vector required for any given image would be the **height * widt
 
 #### Assumptions
 We would want to ensure that the input images have a _uniform aspect ratio_ (e.g., by making sure all of the input images are square in shape) and are _normalized_ (e.g. subtract mean pixel value in a channel from each pixel value in that channel)
+
+## Text Data
+
+#### Normalization
+One of the challenges that can come up in text analysis is that there are often multiple forms that mean the same thing. 
+For example, the verb _to be_ may show up as _is, am, are_, and so on. Or a document may contain alternative spellings of a word, such as _behavior vs. behaviour_. So one step that you will sometimes conduct in processing text is normalization.
+
+Text **normalization** is the _process of transforming a piece of text into a canonical (official) form._
+
+**Lemmatization** is an example of normalization. A lemma is the dictionary form of a word and lemmatization is the process of reducing multiple inflections to that single dictionary form. For example, we can apply this to the is, am, are example we mentioned above:
+| Original Word      | Lemmatized word |
+| ----------- | ----------- |
+| is     | be       |
+| are   | be      |
+| a |  be |
+
+**Stop words** are high-frequency words that are unnecessary (or unwanted) during the analysis. So, remove them.
+
+Here we have **tokenized** the text (i.e., split each string of text into a list of smaller parts or tokens), _removed_ stop words (the), and _standardized spelling_ (changing lazzy to lazy).
 
 
 
