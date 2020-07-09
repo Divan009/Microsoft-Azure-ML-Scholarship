@@ -2,7 +2,8 @@
 
 ## Content
  Lesson 2 - [Introduction to ML](#introduction-to-machine-learning)
- Lesson 3 - [Model Training](model-training)
+ 
+ Lesson 3 - [Model Training](#model-training)
 
 
 # Introduction to Machine Learning
