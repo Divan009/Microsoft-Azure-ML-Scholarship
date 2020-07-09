@@ -1,7 +1,13 @@
 # Microsoft-Azure-ML-Scholarship
 
-_Basically convert everything into numbers_
+## Content
+ Lesson 2 - [Introduction to ML](#introduction-to-machine-learning)
+ Lesson 3 - [Model Training](model-training)
 
+
+# Introduction to Machine Learning
+
+_Basically convert everything into numbers_
 ## Scaling Data
 Let's consider an example. Imagine you have an image represented as a set of RGB values ranging from 0 to 255. We can scale the range of the values from 0–255 down to a range of 0–1. This scaling process will not affect the algorithm output since every value is scaled in the same way. But it can speed up the training process, because now the algorithm only needs to handle numbers less than or equal to 1.
 There are 2 approaches to it: **standardization** and **normalization**.
@@ -214,7 +220,7 @@ The goal of training machine learning models is to achieve low bias and low vari
 - **reduce dimensionality in training data such as PCA**: it projects training data into a smaller dimension to decrease the model complexity.
 Stop the training early when the performance on the testing dataset has not improved after a number of training iterations.
 
-
+# 3. Model Training
 
 
 
