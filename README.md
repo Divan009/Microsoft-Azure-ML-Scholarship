@@ -221,7 +221,46 @@ The goal of training machine learning models is to achieve low bias and low vari
 - **reduce dimensionality in training data such as PCA**: it projects training data into a smaller dimension to decrease the model complexity.
 Stop the training early when the performance on the testing dataset has not improved after a number of training iterations.
 
-# 3. Model Training
+# Model Training
+
+## Data wrangling 
+It is an interative process of cleaning and transforming data to make it more appropriate for data analysis. The process generally follows these main steps:
+
+- Explore the raw data and check the general quality of the dataset.
+- Transform the raw data, by restructuring, normalizing, and cleaning the data. For example, this could involve handling missing values and detecting errors.
+- Validate and publish the data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
