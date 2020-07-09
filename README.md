@@ -230,6 +230,20 @@ It is an interative process of cleaning and transforming data to make it more ap
 - Transform the raw data, by restructuring, normalizing, and cleaning the data. For example, this could involve handling missing values and detecting errors.
 - Validate and publish the data.
 
+## Datastores vs. Datasets
+Datastores offer a layer of abstraction over the supported Azure storage services. They store all the information needed to connect to a particular storage service. Datastores provide an access mechanism that is independent of the computer resource that is used to drive a machine learning process. Datastores help keep your data secure by keeping connection information internal. The datastore is concerned with making a secure connection to your data, but it is not concerned with accessing specific files.
+
+Datasets are resources for exploring, transforming, and managing data in Azure ML. A dataset is essentially a reference that points to the data in storage. It is used to get specific data files in the datastores. To access specific files in your underlying storage, you would use a dataset. 
+
+The steps of the data access workflow are:
+
+- **Create a datastore** so that you can access storage services in Azure.
+- **Create a dataset** which you will subsequently use for model training in your machine learning experiment.
+- **Create a dataset monitor** to detect issues in the data, such as data drift.
+
+Over time, the input data that you are feeding into your model is likely to change—and this is what we mean by **data drift**. ince you trained the model on a certain set of data, it can become increasingly inaccurate and the data changes more and more over time. For example, if you train a model to detect spam in email, it may become less accurate as new types of spam arise that are different from the spam on which the model was trained. Therefore, create a monitor.
+
+
 
 
 
