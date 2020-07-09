@@ -241,6 +241,7 @@ The steps of the data access workflow are:
 - **Create a dataset** which you will subsequently use for model training in your machine learning experiment.
 - **Create a dataset monitor** to detect issues in the data, such as data drift.
 
+#### Data Drift
 Over time, the input data that you are feeding into your model is likely to change—and this is what we mean by **data drift**. ince you trained the model on a certain set of data, it can become increasingly inaccurate and the data changes more and more over time. For example, if you train a model to detect spam in email, it may become less accurate as new types of spam arise that are different from the spam on which the model was trained. Therefore, create a monitor.
 
 
