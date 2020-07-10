@@ -245,10 +245,22 @@ The steps of the data access workflow are:
 Over time, the input data that you are feeding into your model is likely to change—and this is what we mean by **data drift**. ince you trained the model on a certain set of data, it can become increasingly inaccurate and the data changes more and more over time. For example, if you train a model to detect spam in email, it may become less accurate as new types of spam arise that are different from the spam on which the model was trained. Therefore, create a monitor.
 
 ## Features
-_The columns of a data table or matrix; also known as fields, or variables.
+_The columns of a data table or matrix; also known as fields, or variables._
 
 #### Feature Engineering
 The process through which we create new features. It is used to derive new features based on the values of existing features. This process can be as simple as applying a mathematical function to a feature (such as adding 1 to all values in an existing feature ) or it can be as complex as training a separate machine learning model to create values for new features.
+- Feature engineering manipulates existing features in order to create new features, with the goal of improving model training.
+- Feature engineering can be implemented in multiple places, such as at the data source or during model training.
+- Classical machine learning depends on feature engineering much more than deep learning
+
+- **Flagging** Deriving a boolean (0/1 or True/False) value for each entity
+- **Aggregating** Getting a count, sum, average, mean, or median from a group of entities
+- **Part-of** Extracting the month from a date variable
+- **Binning** Grouping customers by age and then calculating average purchases within each group
+- **Text Embedding** is the way to transform sequences of words or NL into numerical values or vectors. eg. TF-IDF, Word Embedding
+- **Image Transformation** is needed too. Suppose you have 400 by 500pixels RGB image. Each pixel will have 3 values(RGB).That means you will have a 60,000 numerical values(400 * 500 * 3) of your image. This could be a vector or a multi-dimensional matrix. In most cases, transforming isn't required especially if you are using Neural Networks because this happens there naturally in the hidden layers.
+
+_Some of the widely used types of data using in ML are numbers, text, and image. And, Feature Engineering depends on the types of data._
 
 #### Feature Selection
 Once you have the features, another important task is selecting the features that are most important or most relevant. We choose which features will be used in the model training process.
