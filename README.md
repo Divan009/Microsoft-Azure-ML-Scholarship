@@ -244,7 +244,17 @@ The steps of the data access workflow are:
 #### Data Drift
 Over time, the input data that you are feeding into your model is likely to change—and this is what we mean by **data drift**. ince you trained the model on a certain set of data, it can become increasingly inaccurate and the data changes more and more over time. For example, if you train a model to detect spam in email, it may become less accurate as new types of spam arise that are different from the spam on which the model was trained. Therefore, create a monitor.
 
+## Features
+_The columns of a data table or matrix; also known as fields, or variables.
 
+#### Feature Engineering
+The process through which we create new features. It is used to derive new features based on the values of existing features. This process can be as simple as applying a mathematical function to a feature (such as adding 1 to all values in an existing feature ) or it can be as complex as training a separate machine learning model to create values for new features.
+
+#### Feature Selection
+Once you have the features, another important task is selecting the features that are most important or most relevant. We choose which features will be used in the model training process.
+
+#### Curse of Dimensionality
+Many machine learning algorithms cannot accommodate a large number of features, so it is often necessary to do dimensionality reduction to decrease the number of features.
 
 
 
