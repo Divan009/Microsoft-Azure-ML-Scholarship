@@ -316,7 +316,15 @@ In contrast, **some model parameters are not learned from the data**. These are 
 - The learning rate of the model
 We must choose some values for these hyperparameters, but we do not necessarily know what the best values will be prior to training. Because of this, a common approach is to take a best guess, train the model, and then tune adjust or  _tune the hyperparameters_ based on the model's performance.
 
+#### Splitting the Data
+We typically want to split our data into three parts:
 
+- Training data
+- Validation data
+- Test data
+We _use the training data to learn the values for the parameters_. Then, we _check the model's performance on the validation data_ and _tune_ the hyperparameters until the model performs well with the validation data. For instance, perhaps we need to have more or fewer layers in our neural network. We can adjust this hyperparameter and then test the model on the validation data once again to see if its performance has improved.
+
+Finally, once we believe we have our finished model (with both parameters and hyperparameters optimized), we will want to do a final check of its performance—and we need to do this on some fresh test data that we did not use during the training process.
 
 
 
