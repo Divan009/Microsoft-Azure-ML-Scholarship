@@ -262,11 +262,28 @@ The process through which we create new features. It is used to derive new featu
 
 _Some of the widely used types of data using in ML are numbers, text, and image. And, Feature Engineering depends on the types of data._
 
+Benefits of feature engineering:- improved model accuracy and More appropriate features for some algorithms
+
 #### Feature Selection
 Once you have the features, another important task is selecting the features that are most important or most relevant. We choose which features will be used in the model training process.
 
-#### Curse of Dimensionality
+**Why do we need Feature Selection?**
+- Some features might be highly irrelevant or redundant or highly correlated(providing same answers). So it's better to remove these features to simplify the situation and improve performance. 
+- It may seem like engineering more features is always a good thing, but, many machine learning algorithms suffer from the curse of dimensionality — that is, they do not perform well when given a large number of variables or features.
+
+#### Curse of Dimensionality(Multiple Dimensions in dataset)
 Many machine learning algorithms cannot accommodate a large number of features, so it is often necessary to do dimensionality reduction to decrease the number of features.
+
+**So how do we deal with Curse of Dimensionality?**
+
+- **PCA (Principal Component Analysis)** = A linear dimensionality reduction technique based mostly on exact mathematical calculations.
+- **t-SNE (t-Distributed Stochastic Neighboring Entities)** - A dimensionality reduction technique based on a probabilistic approach; The target number of dimension is 2 or 3, that means t-SNE is very useful for the **visualization** of multidimensional data. It also **keeps close points** from the multi-dimensional space close in the 2-D or 3D space
+- Feature embedding
+
+**Azure ML prebuilt modules:**
+
+- Filter-based feature selection: identify columns in the input dataset that have the greatest predictive power
+- Permutation feature importance: determine the best features to use by computing the feature importance scores
 
 
 
