@@ -241,8 +241,23 @@ The steps of the data access workflow are:
 - **Create a dataset** which you will subsequently use for model training in your machine learning experiment.
 - **Create a dataset monitor** to detect issues in the data, such as data drift.
 
-#### Data Drift
-Over time, the input data that you are feeding into your model is likely to change—and this is what we mean by **data drift**. ince you trained the model on a certain set of data, it can become increasingly inaccurate and the data changes more and more over time. For example, if you train a model to detect spam in email, it may become less accurate as new types of spam arise that are different from the spam on which the model was trained. Therefore, create a monitor.
+## Data Drift
+_Top reasons why your model's accuracy degraded over time_
+
+Over time, the input data that you are feeding into your model is likely to change over time —and this is what we mean by **data drift**. once you have trained the model on a certain set of data, it can become increasingly inaccurate as the data changes more and more over time. For example, if you train a model to detect spam in email, it may become less accurate as new types of spam arise that are different from the spam on which the model was trained. Therefore, create a monitor.
+Over time, data drift causes degradation in the model's performance, as the input data drifts farther and farther from the data on which the model was trained.
+
+Examples: A change in customer behavior over time.(Natural Drift in Data), A sensor breaks and starts providing inaccurate readings(Data Quality Issues), Two features that used to be correlated are no longer correlated(CoVariate Shift, Change in relationship between features), A sensor is replaced, causing the units of measurement to change (e.g., from minutes to seconds)(Upstream Process Changes].
+
+#### How do we monitor the data drift?
+
+**Specifying a baseline dataset** – usually the training dataset
+**Specifying a target dataset** – usually the input data for the model
+**Comparing these two datasets over time, to monitor for differences**
+Here are a couple different types of comparisons you might want to make when monitoring for data drift:
+
+**Comparing input data vs. training data.** This is a proxy for model accuracy; that is, an increased difference between the input vs. training data is likely to result in a decrease in model accuracy.
+**Comparing different samples of time series data.** In this case, you are checking for a difference between one time period and another. For example, a model trained on data collected during one season may perform differently when given data from another time of year. Detecting this seasonal drift in the data will alert you to potential issues with your model's accuracy.
 
 ## Features
 _The columns of a data table or matrix; also known as fields, or variables._
@@ -285,7 +300,21 @@ Many machine learning algorithms cannot accommodate a large number of features, 
 - Filter-based feature selection: identify columns in the input dataset that have the greatest predictive power
 - Permutation feature importance: determine the best features to use by computing the feature importance scores
 
+## Basics About Training Model
 
+#### Parameters and Hyperparameters
+When we train a model, a large part of the process involves learning the values of the parameters of the model. For example, earlier we looked at the general form for linear regression:
+
+**y = _B0 + B1*x1 + B2*x2 + B3*x3 ... + Bn*xn**_ 
+
+The coefficients in this equation, _B0…Bn_, determine the intercept and slope of the regression line. When training a linear regression model, we use the training data to figure out what the value of these parameters should be. Thus, we can say that _a major goal of model training is to learn the values of the model parameters._
+
+In contrast, **some model parameters are not learned from the data**. These are called **hyperparameters** and their values are set before training. Here are some examples of hyperparameters:
+
+- The number of layers in a deep neural network
+- The number of clusters (such as in a k-means clustering algorithm)
+- The learning rate of the model
+We must choose some values for these hyperparameters, but we do not necessarily know what the best values will be prior to training. Because of this, a common approach is to take a best guess, train the model, and then tune adjust or  _tune the hyperparameters_ based on the model's performance.
 
 
 
