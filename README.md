@@ -19,7 +19,11 @@ There are 2 approaches to it: **standardization** and **normalization**.
 **Normalization _rescales the data into the range [0, 1]._**
 (𝑥 −𝑥𝑚𝑖𝑛)/(𝑥𝑚𝑎𝑥 −𝑥𝑚𝑖𝑛)    For each individual value, you subtract the minimum value (𝑥𝑚𝑖𝑛) for that input in the training dataset, and then divide by the range of the values in the training dataset. The range of the values is the difference between the maximum value (𝑥𝑚𝑎𝑥) and the minimum value (𝑥𝑚𝑖𝑛).
 
+#### Whether to use Normalization or Standardization?
 
+- **Normalization** is good to use when you know that the distribution of your data does not follow a Gaussian distribution(normal distribuition). This can be useful in algorithms that do not assume any distribution of the data like K-Nearest Neighbors and Neural Networks.
+- **Standardization**, on the other hand, can be helpful in cases where the data follows a Gaussian distribution. However, this does not have to be necessarily true. 
+Also, unlike normalization, standardization does not have a bounding range. So, if you have outliers in your data, they will not be affected by standardization.
 
 ## Encoding Categorical Data
 When we have categorical data, we need to encode it in some way so that it is represented numerically.
