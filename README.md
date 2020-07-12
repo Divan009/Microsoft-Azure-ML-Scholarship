@@ -326,18 +326,52 @@ We _use the training data to learn the values for the parameters_. Then, we _che
 
 Finally, once we believe we have our finished model (with both parameters and hyperparameters optimized), we will want to do a final check of its performance—and we need to do this on some fresh test data that we did not use during the training process.
 
+## Training Classifiers
+A classification problem occurs when the expected outputs are categorical(discrete)
 
+There are three main categories of classification problems:
+- Binary classification
+- Multi class single label classification
+- Multi calss multi label classification
 
+### Binary classification
+Binary classification refers to those classification tasks that have two class labels.
 
+Typically, binary classification tasks involve one class that is the normal state and another class that is the abnormal state.
 
+For example "not spam" is the normal state and "spam" is the abnormal state. Another example is "cancer not detected" is the normal state of a task that involves a medical test and "cancer detected" is the abnormal state.
 
+Popular algorithms that can be used for binary classification include:
+- Logistic Regression
+- k-Nearest Neighbors
+- Decision Trees
+- Support Vector Machine
+- Naive Bayes
 
+### Multi class single label classification
+Multi-class classification refers to those classification tasks that have more than two class labels.
 
+Examples include:
+- Face classification.
+- Plant species classification.
+- Optical character recognition.
 
+Popular algorithms that can be used for multi-class classification include:
+- k-Nearest Neighbors.
+- Decision Trees.
+- Naive Bayes.
+- Random Forest.
+- Gradient Boosting.
 
+### Multi calss multi label classification
+Multi-label classification refers to those classification tasks that have two or more class labels, where one or more class labels may be predicted for each example.
 
+Consider the example of photo classification, where a given photo may have multiple objects in the scene and a model may predict the presence of multiple known objects in the photo, such as "bicycle", "apple", "person" etc.
 
-
+Specialized versions of standard classification algorithms can be used, so-called multi-label versions of the algorithms, including:
+- Multi-label Decision Trees
+- Multi-label Random Forests
+- Multi-label Gradient Boosting
 
 
 
