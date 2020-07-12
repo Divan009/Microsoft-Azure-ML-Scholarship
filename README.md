@@ -378,12 +378,12 @@ Specialized versions of standard classification algorithms can be used, so-calle
 - Multi-label Gradient Boosting
 
 ## Training Regressors
-In a *** regression *** problem, the output is numerical or continuous.
+In a **regression** problem, the output is numerical or continuous.
 
 A classic example would be a problem in which you are given data concerning houses and then asked to predict the price, this is a regression problem because price is a continuous, numerical output.
 
 ## Evaluating Model Performance
-The *** test dataset *** is a portion of labeled data that is split off and reserved for model evaluation.
+The **test dataset** is a portion of labeled data that is split off and reserved for model evaluation.
 
 If a model learns to perform well with the training data, but performs poorly with the test data, then there may be a problem that we will need to address before putting our model out into the real world. In practice, we will also need to decide what metrics we will use to evaluate performance, and whether there are any particular thresholds that the model needs to meet on these metrics in order for us to decide that it is "good enough."
 
