@@ -377,9 +377,10 @@ Specialized versions of standard classification algorithms can be used, so-calle
 - Multi-label Random Forests
 - Multi-label Gradient Boosting
 
+## Training Regressors
+In a *** regression *** problem, the output is numerical or continuous.
 
-
-
+A classic example would be a problem in which you are given data concerning houses and then asked to predict the price; this is a regression problem because price is a continuous, numerical output.
 
 
 
