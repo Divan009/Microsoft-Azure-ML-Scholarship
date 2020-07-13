@@ -417,6 +417,12 @@ To get the value of precision we divide the total number of correctly classified
 
 ***Low recall, high precision:*** This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
 
+### F-measure:
+Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more.
+The F-Measure will always be nearer to the smaller value of Precision or Recall.
+
+![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix5_5.png)
+
 ## Ensemble Learning
 
 It combines multiple machine learning models to produce one predictive model. There are three main types of ensemble algorithms:
