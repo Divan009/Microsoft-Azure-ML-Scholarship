@@ -392,8 +392,8 @@ When splitting the available data, it is important to preserve the statistical p
 ## Confusion Matrices
 A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the true values are known. The confusion matrix itself is relatively simple to understand, but the related terminology can be confusing.
 
-https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix1_1.png
 
+![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix1_1.png)
 
 ## Ensemble Learning
 
