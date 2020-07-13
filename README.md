@@ -392,8 +392,22 @@ When splitting the available data, it is important to preserve the statistical p
 ## Confusion Matrices
 A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the true values are known. The confusion matrix itself is relatively simple to understand, but the related terminology can be confusing.
 
+![alt text](https://video.udacity-data.com/topher/2020/May/5ebb0655_confusion-matrix-06/confusion-matrix-06.png)
 
-![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix1_1.png)
+**Definition of the Terms:**
+- True Positive (TP) : Observation is positive, and is predicted to be positive.
+- False Negative (FN) : Observation is positive, but is predicted negative.
+- True Negative (TN) : Observation is negative, and is predicted to be negative.
+- False Positive (FP) : Observation is negative, but is predicted positive.
+
+### Classification Rate/Accuracy:
+Classification Rate or Accuracy is given by the relation:
+
+![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix2_2.png)
+
+### Recall:
+
+![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix3_3.png)
 
 ## Ensemble Learning
 
