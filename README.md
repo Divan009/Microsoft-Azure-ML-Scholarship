@@ -389,6 +389,12 @@ If a model learns to perform well with the training data, but performs poorly wi
 
 When splitting the available data, it is important to preserve the statistical properties of that data. This means that the data in the training, validation, and test datasets need to have similar statistical properties as the original data to prevent bias in the trained model.
 
+## Confusion Matrices
+A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the true values are known. The confusion matrix itself is relatively simple to understand, but the related terminology can be confusing.
+
+https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix1_1.png
+
+
 ## Ensemble Learning
 
 It combines multiple machine learning models to produce one predictive model. There are three main types of ensemble algorithms:
