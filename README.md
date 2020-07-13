@@ -409,6 +409,16 @@ Classification Rate or Accuracy is given by the relation:
 
 ![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix3_3.png)
 
+### Precision:
+
+![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix4_4.png)
+
+To get the value of precision we divide the total number of correctly classified positive examples by the total number of predicted positive examples. High Precision indicates an example labelled as positive is indeed positive (a small number of FP).
+
+***High recall, low precision:*** This means that most of the positive examples are correctly recognized (low FN) but there are a lot of false positives.
+
+***Low recall, high precision:*** This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
+
 ## Ensemble Learning
 
 It combines multiple machine learning models to produce one predictive model. There are three main types of ensemble algorithms:
