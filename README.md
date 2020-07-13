@@ -338,7 +338,7 @@ There are three main categories of classification problems:
 - Multi class single label classification
 - Multi calss multi label classification
 
-### Binary classification
+## Binary classification
 Binary classification refers to those classification tasks that have two class labels.
 
 Typically, binary classification tasks involve one class that is the normal state and another class that is the abnormal state.
@@ -352,7 +352,7 @@ Popular algorithms that can be used for binary classification include:
 - Support Vector Machine
 - Naive Bayes
 
-### Multi class single label classification
+## Multi class single label classification
 Multi-class classification refers to those classification tasks that have more than two class labels.
 
 Examples include:
@@ -367,7 +367,7 @@ Popular algorithms that can be used for multi-class classification include:
 - Random Forest.
 - Gradient Boosting.
 
-### Multi calss multi label classification
+## Multi class multi-label classification
 Multi-label classification refers to those classification tasks that have two or more class labels, where one or more class labels may be predicted for each example.
 
 Consider the example of photo classification, where a given photo may have multiple objects in the scene and a model may predict the presence of multiple known objects in the photo, such as "bicycle", "apple", "person" etc.
@@ -389,9 +389,28 @@ If a model learns to perform well with the training data, but performs poorly wi
 
 When splitting the available data, it is important to preserve the statistical properties of that data. This means that the data in the training, validation, and test datasets need to have similar statistical properties as the original data to prevent bias in the trained model.
 
+## Ensemble Learning
 
+It combines multiple machine learning models to produce one predictive model. There are three main types of ensemble algorithms:
 
+#### Bagging or bootstrap aggregation
 
+- Helps reduce overfitting for models that tend to have high variance (such as decision trees)
+- Uses random subsampling of the training data to produce a bag of trained models.
+- The resulting trained models are homogeneous
+- The final prediction is an average prediction from individual models
+
+#### Boosting
+
+- Helps reduce bias for models.
+- In contrast to bagging, boosting uses the same input data to train multiple models using different hyperparameters.
+- Boosting trains model in sequence by training weak learners one by one, with each new learner correcting errors from previous learners
+- The final predictions are a weighted average from the individual models
+
+#### Stacking
+
+- Trains a large number of completely different (heterogeneous) models
+- Combines the outputs of the individual models into a meta-model that yields more accurate predictions
 
 
 
