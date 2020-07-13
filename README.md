@@ -405,11 +405,9 @@ Classification Rate or Accuracy is given by the relation:
 
 ![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix2_2.png)
 
-### Recall:
 
 ![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix3_3.png)
 
-### Precision:
 
 ![alt text](https://media.geeksforgeeks.org/wp-content/uploads/Confusion_Matrix4_4.png)
 
