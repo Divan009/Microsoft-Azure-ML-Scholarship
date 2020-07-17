@@ -5,7 +5,7 @@
  
  Lesson 3 - [Model Training](#model-training)
  
- Lesson 4 - [Supervised & Unsupervised Learning](#supervised-&-unsupervised-learning)
+ Lesson 4 - [Supervised & Unsupervised Learning](#supervised-and-unsupervised-learning)
 
 
 # Introduction to Machine Learning
@@ -448,7 +448,7 @@ It combines multiple machine learning models to produce one predictive model. Th
 - Trains a large number of completely different (heterogeneous) models
 - Combines the outputs of the individual models into a meta-model that yields more accurate predictions
 
-# Supervised & Unsupervised Learning
+# Supervised and Unsupervised Learning
 
 
 
