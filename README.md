@@ -12,6 +12,8 @@
  Lesson 6 - [Managed Services for ML](#managed-services-for-ml)
  
  Lesson 7 - [Responsible AI](#responsible-ai)
+ 
+ Lesson 8 - [Resources, Notes, Videos](https://github.com/ananyaynkit/Microsoft-Udacity-ML-scholarship)
 
 
 # Introduction to Machine Learning
