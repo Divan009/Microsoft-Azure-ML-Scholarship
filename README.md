@@ -6,6 +6,12 @@
  Lesson 3 - [Model Training](#model-training)
  
  Lesson 4 - [Supervised & Unsupervised Learning](#supervised-and-unsupervised-learning)
+ 
+ Lesson 5 - [Applications of ML](#applications-of-ml)
+ 
+ Lesson 6 - [Managed Services for ML](#managed-services-for-ml)
+ 
+ Lesson 7 - [Responsible AI](#responsible-ai)
 
 
 # Introduction to Machine Learning
@@ -450,8 +456,13 @@ It combines multiple machine learning models to produce one predictive model. Th
 
 # Supervised and Unsupervised Learning
 
+# Applications of ML
 
+# Managed Services for ML
 
+# Responsible AI
+
+ 
 
 
 
