@@ -15,7 +15,7 @@
  
  EXTRA 1 - [Resources, Notes, Videos](https://github.com/ananyaynkit/Microsoft-Udacity-ML-scholarship)
  
- EXTRA 2 - [Structuring ML Projects](https://github.com/Divan009/Structuring-ML-Projects)
+ EXTRA 2 - [How to Structure ML Projects](https://github.com/Divan009/Structuring-ML-Projects)
 
 
 # Introduction to Machine Learning
