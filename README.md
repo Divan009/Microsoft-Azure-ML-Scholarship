@@ -13,7 +13,9 @@
  
  Lesson 7 - [Responsible AI](#responsible-ai)
  
- Lesson 8 - [Resources, Notes, Videos](https://github.com/ananyaynkit/Microsoft-Udacity-ML-scholarship)
+ EXTRA 1 - [Resources, Notes, Videos](https://github.com/ananyaynkit/Microsoft-Udacity-ML-scholarship)
+ 
+ EXTRA 2 - [Structuring ML Projects](https://github.com/Divan009/Structuring-ML-Projects)
 
 
 # Introduction to Machine Learning
