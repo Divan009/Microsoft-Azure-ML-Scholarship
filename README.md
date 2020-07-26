@@ -461,13 +461,12 @@ It combines multiple machine learning models to produce one predictive model. Th
 # Supervised and Unsupervised Learning
 
 ## Supervised Learning: Classification
-The first type of supervised learning that we'll look at is classification. 
-_In a classification problem, the outputs are **categorical or discrete.**_
+_In a classification problem, the **outputs are categorical or discrete.**_
 Some of the most common types of classification problems include:
 
-* **Classification on tabular data:** The data is available in the form of rows and columns, potentially originating from a wide variety of data sources.
-* **Classification on image or sound data:** The training data consists of images or sounds whose categories are already known.
-* **Classification on text data:** The training data consists of texts whose categories are already known.
+ **Classification on tabular data:** The data is available in the form of rows and columns, potentially originating from a wide variety of data sources.
+ **Classification on image or sound data:** The training data consists of images or sounds whose categories are already known.
+ **Classification on text data:** The training data consists of texts whose categories are already known.
 
 **Multi-Class multi-label Classification** - The classifier chooses from multiple categories; each output can belong to one or more categories.
 **Multi-Class single-label Classification** - The classifier chooses from multiple categories; each output belongs to single category only.
@@ -483,18 +482,18 @@ Some of the most common types of classification problems include:
 
 #### Multi-Class Algorithm HyperParamters
 
-**Multi Class Logitistic Regression** - It is used to predict the probability of an outcome
+**1. Multi Class Logitistic Regression** - It is used to predict the probability of an outcome
 
 - **Optimization tolerace** - It controls when to stop iteration. If the improvement between the iteration is less than the specified threshold the algorithm stops and returns a current model.
 - **Regularization weight** - It is a method used to prevent overfitting by penalizing the model with extreme coefficient values. The regularization weight controls how much to penalize the models at each iteration.
 
-**Multi Class Neural Network** - It has a input layer, a hidden layer and the output layer. The relation between the input and the output is learned from training the neural network on the input data.
+**2. Multi Class Neural Network** - It has a input layer, a hidden layer and the output layer. The relation between the input and the output is learned from training the neural network on the input data.
 
 - **number of hidden nodes** - This lets you customize the number of hidden nodes and the neural network.
 - **Learning rate** - This controls the size of the step taken at each iteration before the correction.
 - **number of learning iteration** - Maximum number of times the algorithm should process the training cases.
 
-**Multi Class Decision Forest** - This is an ensemble of decision trees. It works by building multiple Decision trees and then voting on the most popular output class.
+**3. Multi Class Decision Forest** - This is an ensemble of decision trees. It works by building multiple Decision trees and then voting on the most popular output class.
 
 - **resampling method** - this controls the method used to create the individual trees.
 - **number of decision trees** - this specifies the maximum number of decision trees than can be created in the ensemble
@@ -502,11 +501,12 @@ Some of the most common types of classification problems include:
 - **number of random splits per node** - the number of splits to use when building each node of the tree
 - **minimum number of samples per leaf node** - this controls the minimum number of cases that are required to create any terminal node in a tree
 
+## Supervised Learning: Regression
+_In a regression problem, the **output is numerical or continuous**._
 
-
-
-
-
+**Regression on tabular data**: The data is available in the form of rows and columns, potentially originating from a wide variety of data sources.
+**Regression on image or sound data**: Training data consists of images/sounds whose numerical scores are already known. Several steps need to be performed during the preparation phase to transform images/sounds into numerical vectors accepted by the algorithms.
+**Regression on text data**: Training data consists of texts whose numerical scores are already known. Several steps need to be performed during the preparation phase to transform text into numerical vectors accepted by the algorithms.
 
 
 # Applications of ML
