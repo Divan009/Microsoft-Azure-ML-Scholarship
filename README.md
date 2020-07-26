@@ -508,6 +508,44 @@ _In a regression problem, the **output is numerical or continuous**._
 **Regression on image or sound data**: Training data consists of images/sounds whose numerical scores are already known. Several steps need to be performed during the preparation phase to transform images/sounds into numerical vectors accepted by the algorithms.
 **Regression on text data**: Training data consists of texts whose numerical scores are already known. Several steps need to be performed during the preparation phase to transform text into numerical vectors accepted by the algorithms.
 
+#### Regression Algorithm
+
+**Linear Regression** - Linear relationship between independent variables and a numeric output
+There are 2 ways to measure error and fit the regression line.
+
+- Ordinary Least Square Method - It computes error as the sum of the squares of distance from the actual values to the predicted line, and it fits the model by minimizing the squred error. This method assumes a strong linear relationship between the input variables and the dependent variable.
+
+- Gradient Descent - The approach is to minimize the amount of error at each step of the model trading process.
+
+**Decision Forest algorithm** - It is an ensemble learning method for regression. The algorithm works by building multiple decision trees & each tree in a decision forest outputs a distribuition as a prediction. An aggregation is performed over the ensemble of trees to find a distribuition closest to the combined distribuition for all the trees in the model.
+
+**Neural Network Regression** - It is a supervised learning method. It requires a tag dataset which includes a label column. The label column must be of a numerical data type because our regression model predicts a numerical value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Applications of ML
 
