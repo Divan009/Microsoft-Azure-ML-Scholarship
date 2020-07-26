@@ -469,8 +469,15 @@ Some of the most common types of classification problems include:
 * **Classification on image or sound data:** The training data consists of images or sounds whose categories are already known.
 * **Classification on text data:** The training data consists of texts whose categories are already known.
 
+**Multi-Class multi-label Classification** - The classifier chooses from multiple categories; each output can belong to one or more categories.
+**Multi-Class single-label Classification** - The classifier chooses from multiple categories; each output belongs to single category only.
+**Binary Classification** - The classifier choose from only two categories; each output belongs to one or the other.
 
+**Predicts between two categories(Binary Classification)**
+![Two class Classification Algorithm](Git_images/pic%202.png)
 
+**Predicts between serveral categories**
+![Multi-Class Classification Algorithm]
 
 
 
