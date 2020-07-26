@@ -460,6 +460,37 @@ It combines multiple machine learning models to produce one predictive model. Th
 
 # Supervised and Unsupervised Learning
 
+## Supervised Learning: Classification
+The first type of supervised learning that we'll look at is classification. 
+_In a classification problem, the outputs are **categorical or discrete.**_
+Some of the most common types of classification problems include:
+
+* **Classification on tabular data:** The data is available in the form of rows and columns, potentially originating from a wide variety of data sources.
+* **Classification on image or sound data:** The training data consists of images or sounds whose categories are already known.
+* **Classification on text data:** The training data consists of texts whose categories are already known.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Applications of ML
 
 # Managed Services for ML
