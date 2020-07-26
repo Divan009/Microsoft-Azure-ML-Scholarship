@@ -474,22 +474,33 @@ Some of the most common types of classification problems include:
 **Binary Classification** - The classifier choose from only two categories; each output belongs to one or the other.
 
 **Predicts between two categories(Binary Classification)**
+
 ![Two class Classification Algorithm](Git_images/pic%202.png)
 
 **Predicts between serveral categories**
+
 ![Multi-Class Classification Algorithm](Git_images/pic_3.png)
 
+#### Multi-Class Algorithm HyperParamters
 
+**Multi Class Logitistic Regression** - It is used to predict the probability of an outcome
 
+- **Optimization tolerace** - It controls when to stop iteration. If the improvement between the iteration is less than the specified threshold the algorithm stops and returns a current model.
+- **Regularization weight** - It is a method used to prevent overfitting by penalizing the model with extreme coefficient values. The regularization weight controls how much to penalize the models at each iteration.
 
+**Multi Class Neural Network** - It has a input layer, a hidden layer and the output layer. The relation between the input and the output is learned from training the neural network on the input data.
 
+- **number of hidden nodes** - This lets you customize the number of hidden nodes and the neural network.
+- **Learning rate** - This controls the size of the step taken at each iteration before the correction.
+- **number of learning iteration** - Maximum number of times the algorithm should process the training cases.
 
+**Multi Class Decision Forest** - This is an ensemble of decision trees. It works by building multiple Decision trees and then voting on the most popular output class.
 
-
-
-
-
-
+- **resampling method** - this controls the method used to create the individual trees.
+- **number of decision trees** - this specifies the maximum number of decision trees than can be created in the ensemble
+- **maximum depth of the decision trees** - this is a number to limit the maximum depth of any decision trees
+- **number of random splits per node** - the number of splits to use when building each node of the tree
+- **minimum number of samples per leaf node** - this controls the minimum number of cases that are required to create any terminal node in a tree
 
 
 
