@@ -477,7 +477,7 @@ Some of the most common types of classification problems include:
 ![Two class Classification Algorithm](Git_images/pic%202.png)
 
 **Predicts between serveral categories**
-![Multi-Class Classification Algorithm]
+![Multi-Class Classification Algorithm](Git_images/pic_3.png)
 
 
 
