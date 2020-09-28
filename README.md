@@ -8,11 +8,7 @@
  Lesson 4 - [Supervised & Unsupervised Learning](#supervised-and-unsupervised-learning)
  
  Lesson 5 - [Applications of ML](#applications-of-ml)
- 
- Lesson 6 - [Managed Services for ML](#managed-services-for-ml)
- 
- Lesson 7 - [Responsible AI](#responsible-ai)
- 
+
  EXTRA 1 - [Resources, Notes, Videos](https://github.com/ananyaynkit/Microsoft-Udacity-ML-scholarship)
  
  EXTRA 2 - [How to Structure ML Projects](https://github.com/Divan009/Structuring-ML-Projects)
