@@ -7,8 +7,6 @@
  
  Lesson 4 - [Supervised & Unsupervised Learning](#supervised-and-unsupervised-learning)
  
- Lesson 5 - [Applications of ML](#applications-of-ml)
-
  EXTRA 1 - [Resources, Notes, Videos](https://github.com/ananyaynkit/Microsoft-Udacity-ML-scholarship)
  
  EXTRA 2 - [How to Structure ML Projects](https://github.com/Divan009/Structuring-ML-Projects)
@@ -524,30 +522,6 @@ There are 2 ways to measure error and fit the regression line.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Applications of ML
-
-# Managed Services for ML
-
-# Responsible AI
 
  
 
